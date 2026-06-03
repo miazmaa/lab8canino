@@ -1,12 +1,3 @@
-/* you may get a warning
-* Libpng-1.6 is more stringent about checking ICC profiles than previous versions. You can ignore the warning. To get rid of it, remove the iCCP chunk from the PNG image.
-
-Some applications treat warnings as errors; if you are using such an application you do have to remove the chunk. You can do that with any of a variety of PNG editors such as ImageMagick's convert in.png out.png.
-
-To remove the invalid iCCP chunk from all of the PNG files in a folder (directory), you can use ImageMagick's mogrify *.png, provided that your ImageMagick was built with libpng16 (run convert -list format | grep PNG to be sure of that).
-*/
-
-
 #include <allegro5\allegro.h>
 #include <allegro5\allegro_image.h>
 
@@ -18,7 +9,6 @@ int main(int argc, char** argv) {
     const int SCREEN_W = 640;
     const int SCREEN_H = 480;
     const int fish_SIZE = 32;
-
     ALLEGRO_DISPLAY* display = NULL;
     ALLEGRO_EVENT_QUEUE* event_queue = NULL;
     ALLEGRO_TIMER* timer = NULL;
