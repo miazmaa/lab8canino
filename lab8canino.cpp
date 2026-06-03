@@ -1,9 +1,6 @@
 #include <allegro5\allegro.h>
 #include <allegro5\allegro_image.h>
 
-#include <allegro5\allegro.h> 
-#include <allegro5\allegro_image.h> 
-
 int main(int argc, char** argv) {
     const float FPS = 60;
     const int SCREEN_W = 640;
